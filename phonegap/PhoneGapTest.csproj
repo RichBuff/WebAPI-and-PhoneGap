@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E90537EE-70AF-47E0-9589-482A54327CE3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testapp</RootNamespace>
+    <AssemblyName>testapp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="testapp\platforms\android\AndroidManifest.xml" />
+    <Content Include="testapp\platforms\android\ant-build\AndroidManifest.cordova.xml" />
+    <Content Include="testapp\platforms\android\ant-build\dexedLibs\classes-0911bc0a8afae42c255c4680bdf62415.jar" />
+    <Content Include="testapp\platforms\android\ant-build\proguard.txt" />
+    <Content Include="testapp\platforms\android\ant-build\R.txt" />
+    <Content Include="testapp\platforms\android\ant-build\res\drawable-hdpi\icon.png" />
+    <Content Include="testapp\platforms\android\ant-build\res\drawable-ldpi\icon.png" />
+    <Content Include="testapp\platforms\android\ant-build\res\drawable-mdpi\icon.png" />
+    <Content Include="testapp\platforms\android\ant-build\res\drawable-xhdpi\icon.png" />
+    <Content Include="testapp\platforms\android\ant-build\res\drawable\icon.png" />
+    <Content Include="testapp\platforms\android\ant-gen\com\phonegap\helloworld\BuildConfig.java" />
+    <Content Include="testapp\platforms\android\ant-gen\com\phonegap\helloworld\R.java" />
+    <Content Include="testapp\platforms\android\assets\www\config.xml" />
+    <Content Include="testapp\platforms\android\assets\www\cordova.js" />
+    <Content Include="testapp\platforms\android\assets\www\cordova_plugins.js" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap-theme.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap-theme.min.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap.min.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\index.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\normalize.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\Site.css" />
+    <Content Include="testapp\platforms\android\assets\www\css\styles.css" />
+    <Content Include="testapp\platforms\android\assets\www\icon.png" />
+    <Content Include="testapp\platforms\android\assets\www\img\btn-gradient.gif" />
+    <Content Include="testapp\platforms\android\assets\www\img\bullet.png" />
+    <Content Include="testapp\platforms\android\assets\www\img\button_login.gif" />
+    <Content Include="testapp\platforms\android\assets\www\img\header_stripe_gradation.jpg" />
+    <Content Include="testapp\platforms\android\assets\www\img\heroAccent.png" />
+    <Content Include="testapp\platforms\android\assets\www\img\icon_search.gif" />
+    <Content Include="testapp\platforms\android\assets\www\img\login_background_lg.gif" />
+    <Content Include="testapp\platforms\android\assets\www\img\logo.jpg" />
+    <Content Include="testapp\platforms\android\assets\www\img\logo.png" />
+    <Content Include="testapp\platforms\android\assets\www\img\tab_global_resources.gif" />
+    <Content Include="testapp\platforms\android\assets\www\img\tile_shadow_lt_brown.jpg" />
+    <Content Include="testapp\platforms\android\assets\www\img\wait-32x32.GIF" />
+    <Content Include="testapp\platforms\android\assets\www\index.html" />
+    <Content Include="testapp\platforms\android\assets\www\js\bootstrap.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\index.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\jquery-1.8.2.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\jquery-ui-1.8.24.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\jquery.unobtrusive-ajax.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\knockout-2.2.0.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\modernizr-2.6.2.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\script.js" />
+    <Content Include="testapp\platforms\android\assets\www\js\_references.js" />
+    <Content Include="testapp\platforms\android\assets\www\phonegap.js" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\android\icon-36-ldpi.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\android\icon-48-mdpi.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\android\icon-72-hdpi.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\android\icon-96-xhdpi.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\bada-wac\icon-48-type5.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\bada-wac\icon-50-type3.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\bada-wac\icon-80-type4.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\bada\icon-128.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\blackberry\icon-80.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\ios\icon-57-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\ios\icon-57.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\ios\icon-72-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\ios\icon-72.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\tizen\icon-128.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\webos\icon-64.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\windows-phone\icon-173-tile.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\windows-phone\icon-48.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\icon\windows-phone\icon-62-tile.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-hdpi-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-hdpi-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-ldpi-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-ldpi-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-mdpi-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-mdpi-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-xhdpi-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\android\screen-xhdpi-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\bada-wac\screen-type3.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\bada-wac\screen-type4.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\bada-wac\screen-type5.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\bada\screen-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\blackberry\screen-225.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-ipad-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-ipad-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-iphone-landscape-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-iphone-landscape.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-iphone-portrait-568h-2x.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\ios\screen-iphone-portrait.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\webos\screen-64.png" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\windows-phone\screen-portrait.jpg" />
+    <Content Include="testapp\platforms\android\assets\www\spec.html" />
+    <Content Include="testapp\platforms\android\assets\www\spec\helper.js" />
+    <Content Include="testapp\platforms\android\assets\www\spec\index.js" />
+    <Content Include="testapp\platforms\android\assets\www\spec\lib\jasmine-1.2.0\jasmine-html.js" />
+    <Content Include="testapp\platforms\android\assets\www\spec\lib\jasmine-1.2.0\jasmine.css" />
+    <Content Include="testapp\platforms\android\assets\www\spec\lib\jasmine-1.2.0\jasmine.js" />
+    <Content Include="testapp\platforms\android\assets\_where-is-www.txt" />
+    <Content Include="testapp\platforms\android\build.xml" />
+    <Content Include="testapp\platforms\android\CordovaLib\AndroidManifest.xml" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\AndroidManifest.cordova.xml" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes.jar" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\proguard.txt" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-gen\org\apache\cordova\BuildConfig.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\build.xml" />
+    <Content Include="testapp\platforms\android\CordovaLib\proguard-project.txt" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Address.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Connection.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\ConnectionPool.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Dispatcher.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Failure.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\HttpResponseCache.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\AbstractOutputStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Base64.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\DiskLruCache.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Dns.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\FaultRecoveringOutputStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\AbstractHttpInputStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HeaderParser.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpAuthenticator.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpDate.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpEngine.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsEngine.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpTransport.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpURLConnectionImpl.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\OkResponseCacheAdapter.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Policy.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RawHeaders.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RequestHeaders.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\ResponseHeaders.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RetryableOutputStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RouteSelector.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\SpdyTransport.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Transport.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\UnknownLengthHttpInputStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\NamedRunnable.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Platform.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\ErrorCode.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameReader.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameWriter.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\HeadersMode.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Hpack.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Http20Draft06.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\IncomingStreamHandler.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\NameValueBlockReader.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Ping.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Settings.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Spdy3.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyConnection.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyStream.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Variant.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\StrictLineReader.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\DistinguishedNameParser.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\OkHostnameVerifier.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Util.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Job.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\MediaType.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\OkAuthenticator.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\OkHttpClient.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\OkResponseCache.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Request.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Response.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\ResponseSource.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\Route.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\RouteDatabase.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\com\squareup\okhttp\TunnelRequest.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\App.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaChromeClient.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewClient.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\DirectoryManager.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\DroidGap.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\ExifHelper.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\FileHelper.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\IceCreamCordovaWebViewClient.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\JSONUtils.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\LinearLayoutSoftKeyboardDetect.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\ScrollEvent.java" />
+    <Content Include="testapp\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" />
+    <Content Include="testapp\platforms\android\cordova\defaults.xml" />
+    <Content Include="testapp\platforms\android\cordova\lib\android_sdk_version.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\appinfo.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\build.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\check_reqs.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\clean.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\device.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\emulator.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\exec.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\log.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\run.js" />
+    <Content Include="testapp\platforms\android\cordova\lib\spawn.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\benchmark\compare-with-callbacks.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\benchmark\scenarios.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\q.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\queue.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\global.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\make.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\scripts\generate-docs.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\scripts\run-tests.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\shell.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\cat.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\cd.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\chmod.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\common.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\cp.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\dirs.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\echo.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\error.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\exec.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\find.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\grep.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\ls.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\mkdir.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\mv.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\popd.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\pushd.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\pwd.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\rm.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\sed.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\tempdir.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\test.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\to.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\toEnd.js" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\src\which.js" />
+    <Content Include="testapp\platforms\android\custom_rules.xml" />
+    <Content Include="testapp\platforms\android\platform_www\cordova.js" />
+    <Content Include="testapp\platforms\android\proguard-project.txt" />
+    <Content Include="testapp\platforms\android\res\drawable-hdpi\icon.png" />
+    <Content Include="testapp\platforms\android\res\drawable-ldpi\icon.png" />
+    <Content Include="testapp\platforms\android\res\drawable-mdpi\icon.png" />
+    <Content Include="testapp\platforms\android\res\drawable-xhdpi\icon.png" />
+    <Content Include="testapp\platforms\android\res\drawable\icon.png" />
+    <Content Include="testapp\platforms\android\res\values\strings.xml" />
+    <Content Include="testapp\platforms\android\res\xml\config.xml" />
+    <Content Include="testapp\platforms\android\src\com\phonegap\helloworld\HelloWorld.java" />
+    <Content Include="testapp\www\config.xml" />
+    <Content Include="testapp\www\css\bootstrap-theme.css" />
+    <Content Include="testapp\www\css\bootstrap-theme.min.css" />
+    <Content Include="testapp\www\css\bootstrap.css" />
+    <Content Include="testapp\www\css\bootstrap.min.css" />
+    <Content Include="testapp\www\css\index.css" />
+    <Content Include="testapp\www\css\normalize.css" />
+    <Content Include="testapp\www\css\styles.css" />
+    <Content Include="testapp\www\error.html" />
+    <Content Include="testapp\www\icon.png" />
+    <Content Include="testapp\www\img\btn-gradient.gif" />
+    <Content Include="testapp\www\img\bullet.png" />
+    <Content Include="testapp\www\img\button_login.gif" />
+    <Content Include="testapp\www\img\header_stripe_gradation.jpg" />
+    <Content Include="testapp\www\img\heroAccent.png" />
+    <Content Include="testapp\www\img\icon_search.gif" />
+    <Content Include="testapp\www\img\login_background_lg.gif" />
+    <Content Include="testapp\www\img\logo.jpg" />
+    <Content Include="testapp\www\img\logo.png" />
+    <Content Include="testapp\www\img\tab_global_resources.gif" />
+    <Content Include="testapp\www\img\tile_shadow_lt_brown.jpg" />
+    <Content Include="testapp\www\img\wait-32x32.GIF" />
+    <Content Include="testapp\www\index.html" />
+    <Content Include="testapp\www\js\bootstrap.js" />
+    <Content Include="testapp\www\js\index.js" />
+    <Content Include="testapp\www\js\jquery-1.8.2.js" />
+    <Content Include="testapp\www\js\jquery-ui-1.8.24.js" />
+    <Content Include="testapp\www\js\jquery.unobtrusive-ajax.js" />
+    <Content Include="testapp\www\js\knockout-2.2.0.js" />
+    <Content Include="testapp\www\js\modernizr-2.6.2.js" />
+    <Content Include="testapp\www\js\script.js" />
+    <Content Include="testapp\www\js\_references.js" />
+    <Content Include="testapp\www\firstpage.html" />
+    <Content Include="testapp\www\res\icon\android\icon-36-ldpi.png" />
+    <Content Include="testapp\www\res\icon\android\icon-48-mdpi.png" />
+    <Content Include="testapp\www\res\icon\android\icon-72-hdpi.png" />
+    <Content Include="testapp\www\res\icon\android\icon-96-xhdpi.png" />
+    <Content Include="testapp\www\res\icon\bada-wac\icon-48-type5.png" />
+    <Content Include="testapp\www\res\icon\bada-wac\icon-50-type3.png" />
+    <Content Include="testapp\www\res\icon\bada-wac\icon-80-type4.png" />
+    <Content Include="testapp\www\res\icon\bada\icon-128.png" />
+    <Content Include="testapp\www\res\icon\blackberry\icon-80.png" />
+    <Content Include="testapp\www\res\icon\ios\icon-57-2x.png" />
+    <Content Include="testapp\www\res\icon\ios\icon-57.png" />
+    <Content Include="testapp\www\res\icon\ios\icon-72-2x.png" />
+    <Content Include="testapp\www\res\icon\ios\icon-72.png" />
+    <Content Include="testapp\www\res\icon\tizen\icon-128.png" />
+    <Content Include="testapp\www\res\icon\webos\icon-64.png" />
+    <Content Include="testapp\www\res\icon\windows-phone\icon-173-tile.png" />
+    <Content Include="testapp\www\res\icon\windows-phone\icon-48.png" />
+    <Content Include="testapp\www\res\icon\windows-phone\icon-62-tile.png" />
+    <Content Include="testapp\www\res\screen\android\screen-hdpi-landscape.png" />
+    <Content Include="testapp\www\res\screen\android\screen-hdpi-portrait.png" />
+    <Content Include="testapp\www\res\screen\android\screen-ldpi-landscape.png" />
+    <Content Include="testapp\www\res\screen\android\screen-ldpi-portrait.png" />
+    <Content Include="testapp\www\res\screen\android\screen-mdpi-landscape.png" />
+    <Content Include="testapp\www\res\screen\android\screen-mdpi-portrait.png" />
+    <Content Include="testapp\www\res\screen\android\screen-xhdpi-landscape.png" />
+    <Content Include="testapp\www\res\screen\android\screen-xhdpi-portrait.png" />
+    <Content Include="testapp\www\res\screen\bada-wac\screen-type3.png" />
+    <Content Include="testapp\www\res\screen\bada-wac\screen-type4.png" />
+    <Content Include="testapp\www\res\screen\bada-wac\screen-type5.png" />
+    <Content Include="testapp\www\res\screen\bada\screen-portrait.png" />
+    <Content Include="testapp\www\res\screen\blackberry\screen-225.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-ipad-landscape.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-ipad-portrait.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-iphone-landscape-2x.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-iphone-landscape.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-iphone-portrait-568h-2x.png" />
+    <Content Include="testapp\www\res\screen\ios\screen-iphone-portrait.png" />
+    <Content Include="testapp\www\res\screen\webos\screen-64.png" />
+    <Content Include="testapp\www\res\screen\windows-phone\screen-portrait.jpg" />
+    <Content Include="testapp\www\spec.html" />
+    <Content Include="testapp\www\spec\helper.js" />
+    <Content Include="testapp\www\spec\index.js" />
+    <Content Include="testapp\www\spec\lib\jasmine-1.2.0\jasmine-html.js" />
+    <Content Include="testapp\www\spec\lib\jasmine-1.2.0\jasmine.css" />
+    <Content Include="testapp\www\spec\lib\jasmine-1.2.0\jasmine.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="testapp\.cordova\config.json" />
+    <Content Include="testapp\hooks\README.md" />
+    <Content Include="testapp\platforms\android\.project" />
+    <Content Include="testapp\platforms\android\ant-build\AndroidManifest.xml.d" />
+    <Content Include="testapp\platforms\android\ant-build\build.prop" />
+    <Content Include="testapp\platforms\android\ant-build\classes.dex" />
+    <Content Include="testapp\platforms\android\ant-build\classes.dex.d" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\BuildConfig.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\HelloWorld.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\R%24attr.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\R%24drawable.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\R%24string.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\R%24xml.class" />
+    <Content Include="testapp\platforms\android\ant-build\classes\com\phonegap\helloworld\R.class" />
+    <Content Include="testapp\platforms\android\ant-build\HelloWorld-debug-unaligned.apk" />
+    <Content Include="testapp\platforms\android\ant-build\HelloWorld-debug-unaligned.apk.d" />
+    <Content Include="testapp\platforms\android\ant-build\HelloWorld-debug.apk" />
+    <Content Include="testapp\platforms\android\ant-build\HelloWorld.ap_" />
+    <Content Include="testapp\platforms\android\ant-build\HelloWorld.ap_.d" />
+    <Content Include="testapp\platforms\android\ant-gen\R.java.d" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap-theme.css.map" />
+    <Content Include="testapp\platforms\android\assets\www\css\bootstrap.css.map" />
+    <Content Include="testapp\platforms\android\assets\www\res\screen\tizen\README.md" />
+    <Content Include="testapp\platforms\android\assets\www\spec\lib\jasmine-1.2.0\MIT.LICENSE" />
+    <Content Include="testapp\platforms\android\CordovaLib\.project" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\AndroidManifest.xml.d" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\build.prop" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Address.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Connection.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\ConnectionPool%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\ConnectionPool%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\ConnectionPool.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Dispatcher%24RealResponseBody.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Dispatcher.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Failure%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Failure%24Builder.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Failure.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%24CacheRequestImpl%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%24CacheRequestImpl.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%24Entry.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%24EntryCacheResponse.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache%24EntrySecureCacheResponse.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\HttpResponseCache.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\AbstractOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Base64.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%24Editor%24FaultHidingOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%24Editor.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%24Entry.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache%24Snapshot.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\DiskLruCache.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Dns%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Dns.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\FaultRecoveringOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\AbstractHttpInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HeaderParser%24CacheControlHandler.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HeaderParser.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpAuthenticator%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpAuthenticator.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpDate%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpDate.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpEngine%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpEngine.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpsEngine.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl%24HttpUrlConnectionDelegate.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport%24ChunkedInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport%24ChunkedOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport%24FixedLengthInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport%24FixedLengthOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpTransport.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpURLConnectionImpl%24Retry.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\HttpURLConnectionImpl.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\OkResponseCacheAdapter.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\Policy.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RawHeaders%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RawHeaders.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RequestHeaders%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RequestHeaders.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\ResponseHeaders%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\ResponseHeaders.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RetryableOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\RouteSelector.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\SpdyTransport.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\Transport.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\http\UnknownLengthHttpInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\NamedRunnable.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform%24Android23.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform%24Android41.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform%24JdkWithJettyNpnPlatform.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform%24JettyNpnProvider.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Platform.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\ErrorCode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\FrameReader%24Handler.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\FrameReader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\FrameWriter.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\HeadersMode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Hpack%24HeaderEntry.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Hpack%24Reader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Hpack%24Writer.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Hpack.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Http20Draft06%24Reader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Http20Draft06%24Writer.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Http20Draft06.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\IncomingStreamHandler%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\IncomingStreamHandler.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\NameValueBlockReader%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\NameValueBlockReader%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\NameValueBlockReader%24FillableInflaterInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\NameValueBlockReader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Ping.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Settings.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Spdy3%24Reader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Spdy3%24Writer.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Spdy3.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%24Builder.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%24Reader%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection%24Reader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyConnection.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyStream%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyStream%24SpdyDataInputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyStream%24SpdyDataOutputStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\SpdyStream.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\spdy\Variant.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\StrictLineReader%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\StrictLineReader.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\tls\DistinguishedNameParser.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\tls\OkHostnameVerifier.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Util%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\internal\Util.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Job.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\MediaType.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkAuthenticator%24Challenge.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkAuthenticator%24Credential.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkAuthenticator.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkHttpClient%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkHttpClient.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\OkResponseCache.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request%24Body%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request%24Body%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request%24Body.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request%24Builder.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Request.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Response%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Response%24Body.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Response%24Builder.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Response%24Receiver.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Response.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\ResponseSource.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\Route.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\RouteDatabase.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\com\squareup\okhttp\TunnelRequest.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\App%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\App%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\App%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\App%244.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\App.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\AuthenticationToken.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\BuildConfig.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CallbackContext.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\Config.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%244%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%244.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%245%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity%245.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaActivity.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaArgs.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%244.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%245.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%246.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%247.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%248.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient%249.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaChromeClient.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaInterface.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaPlugin.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaResourceApi%24OpenForReadResult.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaResourceApi.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%242.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%243.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%244.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%24ActivityResult.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView%24Level16Apis.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebView.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebViewClient%241%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebViewClient%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\CordovaWebViewClient.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\DirectoryManager.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\DroidGap.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\ExifHelper.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\ExposedJsApi.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\FileHelper.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\IceCreamCordovaWebViewClient.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\JSONUtils.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\LinearLayoutSoftKeyboardDetect.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\LOG.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24BridgeMode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24JsMessage.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24LoadUrlBridgeMode%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24LoadUrlBridgeMode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24OnlineEventsBridgeMode%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24OnlineEventsBridgeMode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue%24PrivateApiBridgeMode.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\NativeToJsMessageQueue.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginEntry.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginManager%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginManager%24PluginManagerService%241.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginManager%24PluginManagerService.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginManager.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginResult%24Status.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\PluginResult.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\ScrollEvent.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\Whitelist%24URLPattern.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-build\classes\org\apache\cordova\Whitelist.class" />
+    <Content Include="testapp\platforms\android\CordovaLib\ant-gen\R.java.d" />
+    <Content Include="testapp\platforms\android\CordovaLib\local.properties" />
+    <Content Include="testapp\platforms\android\CordovaLib\project.properties" />
+    <Content Include="testapp\platforms\android\cordova\android_sdk_version" />
+    <Content Include="testapp\platforms\android\cordova\build" />
+    <Content Include="testapp\platforms\android\cordova\build.bat" />
+    <Content Include="testapp\platforms\android\cordova\check_reqs" />
+    <Content Include="testapp\platforms\android\cordova\clean" />
+    <Content Include="testapp\platforms\android\cordova\clean.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\install-device" />
+    <Content Include="testapp\platforms\android\cordova\lib\install-device.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\install-emulator" />
+    <Content Include="testapp\platforms\android\cordova\lib\install-emulator.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-devices" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-devices.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-emulator-images" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-emulator-images.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-started-emulators" />
+    <Content Include="testapp\platforms\android\cordova\lib\list-started-emulators.bat" />
+    <Content Include="testapp\platforms\android\cordova\lib\start-emulator" />
+    <Content Include="testapp\platforms\android\cordova\lib\start-emulator.bat" />
+    <Content Include="testapp\platforms\android\cordova\log" />
+    <Content Include="testapp\platforms\android\cordova\log.bat" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\CONTRIBUTING.md" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\LICENSE" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\package.json" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\q\README.md" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\.documentup.json" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\.jshintrc" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\.npmignore" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\.travis.yml" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\bin\shjs" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\LICENSE" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\package.json" />
+    <Content Include="testapp\platforms\android\cordova\node_modules\shelljs\README.md" />
+    <Content Include="testapp\platforms\android\cordova\run" />
+    <Content Include="testapp\platforms\android\cordova\run.bat" />
+    <Content Include="testapp\platforms\android\cordova\version" />
+    <Content Include="testapp\platforms\android\cordova\version.bat" />
+    <Content Include="testapp\platforms\android\local.properties" />
+    <Content Include="testapp\platforms\android\project.properties" />
+    <Content Include="testapp\plugins\android.json" />
+    <Content Include="testapp\www\css\bootstrap-theme.css.map" />
+    <Content Include="testapp\www\css\bootstrap.css.map" />
+    <Content Include="testapp\www\res\screen\tizen\README.md" />
+    <Content Include="testapp\www\spec\lib\jasmine-1.2.0\MIT.LICENSE" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="testapp\merges\android\" />
+    <Folder Include="testapp\platforms\android\ant-build\rsLibs\" />
+    <Folder Include="testapp\platforms\android\ant-build\rsObj\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\ant-build\dexedLibs\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\ant-build\res\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\ant-build\rsLibs\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\ant-build\rsObj\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\libs\" />
+    <Folder Include="testapp\platforms\android\CordovaLib\res\" />
+    <Folder Include="testapp\platforms\android\cordova\node_modules\.bin\" />
+    <Folder Include="testapp\platforms\android\libs\" />
+    <Folder Include="testapp\testapp\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51579/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

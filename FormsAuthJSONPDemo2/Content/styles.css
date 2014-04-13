@@ -1,0 +1,92 @@
+﻿@import url("bootstrap.css") screen;
+
+
+.modal-backdrop {background-color: green;}
+
+.bblogin {
+    background-image: url("/Images/login_background_lg.gif");
+    align-content:center;
+    height:28em;
+}
+
+.login-modal {
+    width:472px !important;
+}
+
+#BBLogin {
+}
+
+#login-table {
+    position:relative;
+    top:4.8em;
+}
+
+
+.error-msg {
+    color:red;
+    width: 380px;
+    padding-top: 5px;
+    font-size:.9em;
+    padding-left:.5em;
+    display:none;
+}
+
+#login-table td {
+    height:2.1em;
+}
+
+#forgotpassword {
+    position: relative;
+    bottom:0px;
+}
+
+#content-body {
+    background-color:#efefef;
+}
+
+.bbbutton {
+    background-image: url("/Images/btn-gradient.gif");
+    height:2.2em;
+    width:4.5em;
+    border-radius:.6em;
+    border:2px black solid;
+}
+
+.bbtab {
+    background-image: url("/Images/btn-gradient.gif");
+    height:2.2em;
+    width:4.5em;
+    border-top-left-radius:.6em;
+    border-top-right-radius:.6em;
+    border:2px black solid;
+}
+
+#bblogo {
+    margin-top:5em;
+    padding-top:10em;
+    margin-left:.5em;
+}
+
+#little-vert-lines {
+    background-image:url("../Images/header_stripe_gradation.jpg");
+    background-repeat: repeat-x;
+    border:0px solid black;
+    width:100%;
+    height:40px;
+    margin-top:-10px;
+}
+
+#brown-pattern {
+    background-image:url("../Images/tile_shadow_lt_brown.jpg");
+    background-repeat: repeat-x;
+    border:0px solid black;
+    width:100%;
+    height:25px;
+    margin-top:-10px;
+}
+
+
+#loginerror {
+    color:red;
+    display:none;
+}

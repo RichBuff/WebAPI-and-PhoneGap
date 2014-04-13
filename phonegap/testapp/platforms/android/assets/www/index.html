@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <script src="js/jquery-1.8.2.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            var deviceIsReady = false;
+
+            $().ready(function () {
+                $(document).on("deviceready", onDeviceReady);
+                $("#thetitle").text("Document is ready");
+                setTimeout(function () {
+                    if (deviceIsReady == false) {
+                        initIndexPage();
+                        deviceIsReady = true;
+                    }
+                }, 1000);
+            });
+
+            function onDeviceReady() {
+                if (deviceIsReady == false) {
+                    initIndexPage();
+                    deviceIsReady = true;
+                }
+            }
+
+        </script>
+        <title>Login Demo</title>
+    </head>
+    <body>
+        <div class="app">
+            <h2 id="thetitle">Phone Gap 2</h2>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Fixin' to Connect to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+
+        <div class="modal" id="loginbox" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog login-modal">
+            <div class="modal-content" id="index-modal-content">
+              <div class="modal-body" style="height:31em;">
+                    <table id="BBLogin" class="bblogin table_left" border="0" style="border-collapse:collapse;">
+	                    <tr>
+		        <td>
+                    <table id="login-table" style="width: 430px; text-align:center;" border="0">
+                        <tr>
+                            <td colspan="4">
+                                <div class="error-msg" >Your login attempt was not successful. Use the Forgot Password link or contact your local agenda compiler. The BoardBook helpdesk is available at 888-587-2665, Monday through Friday 8:00 AM to 5:00 PM CST.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:75px;">&nbsp;</td>
+                            <td style="width:75px;">
+                                User ID:
+                            </td>
+                            <td style="width:160px" valign="middle" align="right">
+                                <input name="BBLogin$UserName" type="text" id="txtname" style="width:235px;" />
+                            </td>
+                            <td>
+                                <span id="username_required" style="display:inline-block;color:Red;width:130px;font-size:12px;font-weight:normal;visibility:hidden;">* User ID is required</span>
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td style="width:75px;">&nbsp;</td>
+                            <td style="width:75px;">
+                                Password:
+                            </td>
+                            <td style="width:160px" valign="middle" align="right">
+                                <input name="BBLogin$Password" type="password" maxlength="45" id="txtpassword" style="width:235px;" />
+                            </td>
+                            <td>
+                                <span id="password_required" style="display:inline-block;color:Red;width:130px;font-size:12px;font-weight:normal;visibility:hidden;">* Password is required</span>
+                            </td>
+                       </tr>
+                        <tr>
+                            <td colspan="2"><span  style="width:75px;">&nbsp;</span></td>
+                            <td colspan="1" style="text-align: left">
+                            <span id="remember_user_txt">
+                                <input type="checkbox" name="remember_userid" id="remember_userid"/>
+                                <span>Remember User ID</span>
+                            </span>
+                            </td>
+                            <td style="width:75px;">&nbsp;</td>
+
+                        </tr>
+                       <tr>
+                           <td colspan="4" style="padding-top:10px;position: relative;left:-20px;">
+                            <span id="login-button-container">
+                                <input type="button" name="Login" id="Login" class="bbbutton" style="border-width:0px;" value="Login" />
+                                <img id="login-wait-img" src="img/wait-32x32.GIF" style="display:none"/>
+                            </span>
+                            <a href="/Public/ForgotPasswordOrUserId.aspx" id="forgotpassword">Forgot Password or User ID</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="width:75px;">&nbsp;</td>
+                           <td colspan="2" align="right" style="padding-top:10px">
+                           </td>
+                           <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <td style="width:75px;">&nbsp;</td>
+                           <td colspan="2" align="right" style="padding-top:10px">&nbsp;</td>
+                           <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <td style="width:75px;">&nbsp;</td>
+                           <td colspan="2" align="right" style="padding-top:10px"><span id="loginerror">hello</span></td>
+                           <td>&nbsp;</td>
+                        </tr>
+
+                        </table>
+                </td>
+	        </tr>
+                    </table>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+
+            $("#loginbox").on('show.bs.modal', function (e) {
+                $(".modal").css("background-color", "#e8e8e8");
+                $("#index-modal-content").css("top", "10em");
+            });
+
+            $("#loginbox").modal({
+                backdrop: false,
+                show: true
+            });
+
+
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Please log in</title>
+</head>
+<body>
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <link href="Content/styles.css" rel="stylesheet" />
+    <script src="Scripts/jquery-ui-1.8.24.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script type="text/javascript">
+    $().ready(function () {
+        $("#btnlogin").bind("click", function (ev) {
+            doLogin();
+        });
+
+        $("#txtname").focus();
+    });
+</script>
+
+<div class="main-wrapper">
+    <label for="txtname">User Name:</label>
+    <input type="text" id="txtname" />
+    <br />
+    <label for="txtpassword">Password:</label>
+    <input type="password" id="txtpassword" />
+    <br />
+    <button value="Login" id="btnlogin">Login</button>
+    <div id="loginerror">Invalid Username or password</div>
+</div>
+
+</body>
+</html>

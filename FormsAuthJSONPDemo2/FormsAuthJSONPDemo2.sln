@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthJSONPDemo2", "FormsAuthJSONPDemo2.csproj", "{D1C863D9-FF9D-4A06-91AA-6972F1A0F7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthDemoTest", "FormsAuthDemoTest\FormsAuthDemoTest.csproj", "{4F9E9037-86F3-4413-9323-2DD5E918A432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneGapTest", "..\phonegap\PhoneGapTest.csproj", "{E90537EE-70AF-47E0-9589-482A54327CE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C863D9-FF9D-4A06-91AA-6972F1A0F7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C863D9-FF9D-4A06-91AA-6972F1A0F7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C863D9-FF9D-4A06-91AA-6972F1A0F7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C863D9-FF9D-4A06-91AA-6972F1A0F7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9E9037-86F3-4413-9323-2DD5E918A432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9E9037-86F3-4413-9323-2DD5E918A432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9E9037-86F3-4413-9323-2DD5E918A432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9E9037-86F3-4413-9323-2DD5E918A432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90537EE-70AF-47E0-9589-482A54327CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90537EE-70AF-47E0-9589-482A54327CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90537EE-70AF-47E0-9589-482A54327CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90537EE-70AF-47E0-9589-482A54327CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
